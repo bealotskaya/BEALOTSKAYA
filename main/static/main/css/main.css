@@ -1,8 +1,8 @@
 body {
     background: #363636;
     color: #ffffff;
-    font-family: "Monserrat";
-  
+    font-family: "Podkova";
+    margin-left: 235px;
 }
 
 h1 {
@@ -18,26 +18,31 @@ h2, h3 {
 p, h2, h3, ul {
     text-align: left;
     margin-top: 20px;
-    margin-left: px;
+    
     width: 85%;
 }
 
 
 
 aside {
-    height: 150vh;
-    float: left;
-    margin-left: 0px;
-    margin-top: 0px;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 200px; 
+    height: 100%; 
+    /*height: 150vh;*/
     background: #38429b;
-    width: 15%;
+    /*width: 15%;*/
     color: #fff;
     border-right: 5px solid #000000;
     font-family: "PIXY";
     text-decoration: none;
+    padding: 10px; /* Отступы внутри бокового меню */
+
 }
 
 aside  h2 {
+   
     margin-left: 0px;
     color: #fff;
     width: 15%;
@@ -48,6 +53,11 @@ aside ul {
     text-decoration: none;
     text-align: left;
     font-size: 14px ;
+}
+
+aside a:link {
+    color: #d6d6d6; 
+    text-decoration: none;
 }
 
 aside a:visited {
@@ -63,6 +73,11 @@ aside a:hover {
 
 aside a:active {
     color: rgb(0, 0, 0); 
+    text-decoration: none;
+}
+
+a:link {
+    color: #d6d6d6; 
     text-decoration: none;
 }
 
@@ -97,8 +112,8 @@ aside .logo {
    
 }
 
-code{
-    font-family: Courier New, monospace;
+code {
+    padding-left: 130px;
     color: #36a2e8;
     
 }
@@ -111,8 +126,8 @@ code{
   } 
 
   @font-face {
-    font-family: "Monserrat"; 
-    src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) format("truetype"); 
+    font-family: "Podkova"; 
+    src: url(../fonts/Podkova/Podkova-VariableFont_wght.ttf) format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
   } 
