@@ -1,56 +1,86 @@
 body {
     background: #363636;
     color: #ffffff;
-    font-family: 'Times New Roman', Times, serifs;
-    
+    font-family: "Monserrat";
+  
 }
 
 h1 {
     text-align: center;
     font-family: "PIXY";
+    padding: 2.5%;
+}
+
+h2, h3 {
+    font-family: "PIXY";    
 }
 
 p, h2, h3, ul {
     text-align: left;
     margin-top: 20px;
     margin-left: px;
+    width: 85%;
 }
 
+
+
 aside {
+    height: 150vh;
     float: left;
+    margin-left: 0px;
+    margin-top: 0px;
     background: #38429b;
-    width: 10%;
-    padding: 2.5%;
-    height: 100vh;
+    width: 15%;
     color: #fff;
     border-right: 5px solid #000000;
     font-family: "PIXY";
-   
+    text-decoration: none;
 }
 
 aside  h2 {
     margin-left: 0px;
     color: #fff;
+    width: 15%;
 }
 aside ul {
     margin-left: 0px;
     color: #d6d6d6;
     text-decoration: none;
+    text-align: left;
+    font-size: 14px ;
 }
 
 aside a:visited {
     color: #d6d6d6; 
+    text-decoration: none;
 }
 
 aside a:hover {
     color: rgb(117, 117, 117); 
+    text-decoration: none;
 }
 
 
 aside a:active {
     color: rgb(0, 0, 0); 
+    text-decoration: none;
 }
 
+ a:visited {
+    color: #d6d6d6; 
+    text-decoration: none;
+}
+
+ a:hover {
+    color: rgb(117, 117, 117); 
+    text-decoration: none;
+}
+
+
+ a:active {
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+}
 aside img {
     
     float: left;
@@ -64,6 +94,7 @@ aside .logo {
     font-weight: bold;
     position: relative;
     top: 5px;
+   
 }
 
 code{
@@ -75,6 +106,13 @@ code{
 @font-face {
     font-family: "PIXY"; 
     src: url(../fonts/PIXY/PIXY.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+
+  @font-face {
+    font-family: "Monserrat"; 
+    src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
   } 
