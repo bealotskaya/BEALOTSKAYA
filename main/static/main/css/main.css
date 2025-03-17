@@ -7,12 +7,19 @@ body {
 
 h1 {
     text-align: center;
+    color: #38429b;
+    text-shadow: 
+                -1px -1px 0 white,  
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white;
     font-family: "PIXY";
     padding: 2.5%;
 }
 
 h2, h3 {
-    font-family: "PIXY";    
+    text-align: center;
+    font-family: "PIXY";
 }
 
 p, h2, h3, ul {
@@ -102,7 +109,12 @@ aside img {
 }
 
 aside .logo {
-    color: #ffffff;
+    color: #38429b;
+    text-shadow: 
+                -1px -1px 0 white,  
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white;
     font-size: 33px;
     font-family: "PIXY";
     margin-left: 10px;
