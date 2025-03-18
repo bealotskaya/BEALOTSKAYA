@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="../../../static/main/css/frames.css"> 
+</head>
+<body>
+    <aside>
+        <span class="logo">Day 3</span>
+        <h3>Мои работы:</h3>
+        <ul>
+            <li><a href="index.html">Анкета 1</a></li><br>
+            <li><a href="forms.html">Анкета 2</a></li><br>
+        </ul>   
+        <a href="../main.html"><img src="../../../../main/static/main/img/home.png"  height= 30px> </a><br>
+    </aside>
+
+    <h1>Заполните анкету</h1>
+
+    <fieldset> 
+        <LEGEND>Личные данные</LEGEND> 
+            <input type="text" placeholder="Фамилия" id= "lastname" name="lastname" pattern="^[А-Яа-яЁё]{1,25}$" maxlength="25" autofocus required > <br>
+            <input type="text" placeholder="Имя" id= "name" name="name" pattern="^[А-Яа-яЁё]{1,20}$" maxlength="20" required ><br>
+            <input type="text" placeholder="Фамилия" id= "Fathername" name="Fathername" pattern="^[А-Яа-яЁё]{1,24}$" maxlength="24" required>
+        <fieldset><br>
+
+        
+            <legend>Паспортные данные</legend>
+            <INPUT TYPE="text" ID="searu" NAME="searu"  placeholder="Серия"
+            pattern="^[A-Z]{2}$" maxlength="2" minlength="2" required> 
+            <INPUT TYPE="text" ID="namberp" NAME="namberp" placeholder="Номер паспорта"
+            pattern="^\d{7}$" maxlength="7" minlength="7" required> 
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Дата рождения</legend>
+            <input type="text" ID="year" NAME="year"  placeholder="Год рождения" pattern="^\d{4}$" maxlength="4" minlength="4" > <br>
+
+            <select name="month" id="month">
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+            </select><br>
+            <input type="number" id="numberInput" name="numberInput" 
+                min="1" max="31" step="1" >
+        </fieldset><br>
+    <fieldset>
+        <select name="n" id="n" required>
+            <option value="1">РБ</option>
+            <option value="2">РФ</option>
+            <option value="3">КЗ</option>
+            <option value="4">ПЛ</option>
+        </select><br>
+        <label for="adres">Адрес:</label><br>
+        <input type="text">
+    </fieldset> <br>
+
+    <fieldset>
+        <legend>Интересы</legend>
+        <fieldset>
+            <legend> Хобби</legend>
+            <label><input type="checkbox" name="hobby[]">Рыбалка</label><br>
+            <label><input type="checkbox" name="hobby[]">Астраномия</label><br>
+            <label><input type="checkbox" name="hobby[]">Дайвинг</label><br>
+            <label><input type="checkbox" name="hobby[]">Марки</label><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Домашние животные (возможность выбрать нескольких)</legend>
+                <select name="list" id="list"><br> 
+
+                    <optgroup label="Попугаи">
+                        <option value="1">Волнистый </option>
+                        <option value="2">Ара</option>
+                        <option value="3">Неразлучники</option>
+                    </optgroup>
+
+                    <optgroup label="Рыба">
+                        <option value="4">Караси</option>
+                        <option value="5">Окуни</option>
+                        <option value="6">Осётр</option>
+                    </optgroup>
+
+                    <optgroup label="Птицы">
+                        <option value="7">Стая ворон</option>
+                        <option value="8">Аист</option>
+                        <option value="9">Археоптерикс</option>
+                    </optgroup>
+
+                </select>
+        </fieldset><br>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Данные для входа и восстановления пароля</legend>
+        <label for=“login”>Имя: </label>
+        <INPUT TYPE="text" ID="login" NAME="login" pattern="[A-Za-z]{5,20}" minlength="5" maxlength="20" 
+        required>
+        <label for=“pass”> Пароль: </label>
+        <INPUT TYPE="password" ID="pass" NAME="password"
+        pattern="[A-Za-z]{10,20}" 
+               minlength="10" 
+               maxlength="20"
+               required 
+               autocomplete="off" >
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Цифры</legend>
+        <input type="numbers" id="numbers" name="numbers" min="-2.5" max="2.5" step="0.1" ><br>
+        <input type="range" min="1" max="10">
+
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Кнопки управлени</legend>
+
+        <button type="submit">Отправить</button>
+        <button type="reset"> Сбросить</button>
+        <br>
+        <input type="image" src="../../../../../main/static/main/img/mail.png" height= 30px>
+    </fieldset> <br>
+</body>
+</html>

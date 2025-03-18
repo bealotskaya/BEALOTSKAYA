@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета 2</title>
+    <link rel="stylesheet" href="../../../static/main/css/frames.css"> 
+</head>
+
+<body>
+    <aside>
+        <span class="logo">Day 3</span>
+        <h3>Мои работы:</h3>
+        <ul>
+            <li><a href="index.html">Анкета 1</a></li><br>
+            <li><a href="forms.html">Анкета 2</a></li><br>
+        </ul>   
+        <a href="../main.html"><img src="../../../../main/static/main/img/home.png"  height= 30px> </a><br>
+    </aside>
+
+    <table style="width: 700px;">
+        <tr>
+            <td>
+                <h3>Простая форма поиска с вариантами:</h3>
+                <form name="search_form1" method="get" action="http://sc.it-academy.by/fe/form.php">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" name="query" maxlength="10">
+                        <input type="submit" value="Искать"><br>
+                        <input type="radio" name="where" value="site" checked> на сайте
+                        <input type="radio" name="where" value="google"> в google <br>
+                        <i>Длина запроса не более 10 символов</i>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <h3>Простая форма поиска с вариантами:</h3>
+                <form name="search_form2" method="get" action="http://sc.it-academy.by/fe/form.php">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" name="query" required autofocus>
+                        * <input type="submit" value="Искать"><br>
+                        <input type="radio" name="where" value="site"> на сайте
+                        <input type="radio" name="where" value="google" checked> в google <br>
+                        <i>* - обязательное поле</i>
+                        <i>Автофокус в поле поиска</i>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Простая форма авторизации:</h3>
+                <form name="auth_form" method="post" action="http://sc.it-academy.by/fe/form.php">
+                    <fieldset>
+                        <legend>Авторизируйтесь</legend>
+                        * Логин <input type="text" name="login" required><br>
+                        * Пароль <input type="password" name="password" required><br>
+                        <input type="checkbox" name="stay_signed"> Оставаться в системе <br>
+                        <input type="submit" value="Войти"> <br>
+                        <i>* - обязательное поле</i>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <h3>Опрос(голосование):</h3>
+                <form name="vote_form" method="post" action="http://sc.it-academy.by/fe/form.php">
+                    <fieldset>
+                        <legend>Как вам?</legend>
+                        <input type="radio" name="opinion" value="nothing" checked> ничего<br>
+                        <input type="radio" name="opinion" value="normal"> неплохо<br>
+                        <input type="radio" name="opinion" value="good"> хорошо<br>
+                        <input type="radio" name="opinion" value="super"> супер<br>
+                        <input type="hidden" name="date_voite" value="2013.12.31">
+                        <input type="submit" value="Отправить"> <br>
+                        <i>Есть скрытое поле name="date_voite", value="2013.12.31"</i>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Отзыв:</h3>
+                <form name="feedback_form" method="post" action="http://sc.it-academy.by/fe/form.php">
+                    <fieldset>
+                        <legend>Оставьте Ваш отзыв</legend>
+                        * Имя <input type="text" name="name" required><br>
+                        * e-mail <input type="email" name="email" required><br>
+                        Форма отправки<br>
+                        <textarea name="comment"></textarea><br>
+                        <input type="submit" value="Отправить"> <br>
+                        <i>* - обязательное поле поле email - с проверкой метод POST</i>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <h3>Выпадающий и мульти списки:</h3>
+                <form name="cities_form" method="get" action="http://sc.it-academy.by/fe/form.php">
+                    <fieldset>
+                        <legend>Города РБ</legend>
+                        <select name="cities" size="7" multiple>
+                            <optgroup label="Города РБ">
+                                <option>Брест</option>
+                                <option>Минск</option>
+                                <option>Витебск</option>
+                            </optgroup>
+                            <optgroup label="Города России">
+                                <option>Москва</option>
+                                <option>Рязань</option>
+                                <option>Магадан</option>
+                            </optgroup>
+                        </select>
+                        <br><br>
+                        <select name="city">
+                            <option>Брест</option>
+                            <option>Минск</option>
+                            <option>Витебск</option>
+                        </select>
+                        <input type="submit" value="Ok">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Загрузка файла на сервер:</h3>
+                <form name="upload_form" method="post" action="http://sc.it-academy.by/fe/form.php"
+                    enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Upload</legend>
+                        Файл: <input type="file" name="file"><br><br>
+                        Срок хранения (года): <input type="number" name="storage_term"><br><br>
+                        <input type="submit" value="загрузить"><br>
+                        <i>Метод POST<br>
+                            В теге form используйте атрибут enctype="multipart/form-data" для отправки файла на
+                            сервер</i>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <h3>Валидация данных HTML5:</h3>
+                <form name="validate_form" method="get" action="http://sc.it-academy.by/fe/form.php">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" name="only_rus" placeholder="Только русские буквы" pattern="[А-Яа-яЁё\s]+"
+                            title="Только русские буквы"><br><br>
+                        <input type="tel" name="phone" placeholder="+XXX-XX-XXXXXXX" pattern="\+375-\d{2}-\d{7}"
+                            title="Формат: +375-29-1234567"><br><br>
+                        <input type="submit" value="Проверить"> <br>
+                        <i>Телефонный номер в формате +XXX-XX-XXXXXXX, где X - любое число<br>+375-29-1234567</i>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

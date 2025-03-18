@@ -115,7 +115,7 @@ aside .logo {
                 1px -1px 0 white,
                 -1px 1px 0 white,
                 1px 1px 0 white;
-    font-size: 30px;
+    font-size: 33px;
     font-family: "PIXY";
     margin-left: 10px;
     font-weight: bold;
@@ -128,6 +128,10 @@ code {
     padding-left: 130px;
     color: #36a2e8;
     
+}
+
+table {
+    margin: center;  
 }
 
 @font-face {
