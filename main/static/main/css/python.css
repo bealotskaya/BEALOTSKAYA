@@ -22,10 +22,9 @@ h2, h3 {
     font-family: "PIXY";
 }
 
-p, h2, h3, ul {
+p, ul {
     text-align: left;
     margin-top: 20px;
-    
     width: 85%;
 }
 
@@ -131,7 +130,15 @@ code {
 }
 
 table {
-    margin: center;  
+    width: 50%; 
+    margin: 0 auto; 
+    border-collapse: collapse; 
+}
+
+th, td {
+    border: 1px solid #ccc; 
+    padding: 5px; 
+    text-align: center; 
 }
 
 @font-face {
