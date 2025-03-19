@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+
+    <style>
+        .leftBlock {
+            width: 30%;
+            background-color: pink;
+            color: white;
+            float: left;
+            text-align: center;
+        }
+
+        .centerBlock {
+            width: 50%;
+            background-color: green;
+            color: white;
+            float: left;
+            text-align: center;
+        }
+
+        .rightBlock {
+            width: 20%;
+            background-color: blue;
+            color: white;
+            float: right;
+            text-align: center;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="clearfix">
+        <div class="leftBlock">Левый блок</div>
+        <div class="centerBlock">Центральный блок</div>
+        <div class="rightBlock">Правый блок</div>
+    </div>
+
+</body>
+
+</html>

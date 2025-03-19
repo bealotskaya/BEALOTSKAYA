@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+
+    <style>
+        #div_three {
+            width: 400px;
+            height: 300px;
+            background-color: lightblue;
+            position: relative;
+        }
+
+        #search {
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            width: 200px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+
+        #search_zindex {
+            position: absolute;
+            left: 350px;
+            top: 100px;
+            width: 200px;
+            height: 100px;
+            background-color: lightgreen;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div_three">
+        <div id="search">Абсолютное позиционирование</div>
+        <div id="search_zindex">Элемент с z-index: -1</div>
+    </div>
+</body>
+
+</html>

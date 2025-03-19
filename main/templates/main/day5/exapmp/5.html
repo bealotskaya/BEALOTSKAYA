@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+
+    <style>
+        .example {
+            width: 200px;
+            height: 100px;
+            border: 1px solid #000;
+            margin: 20px 0;
+            padding: 5px;
+        }
+
+        .visible {
+            overflow: visible;
+            background-color: #e0e0e0;
+        }
+
+        .hidden {
+            overflow: hidden;
+            background-color: #ffe0e0;
+        }
+
+        .scroll {
+            overflow: scroll;
+            background-color: #e0ffe0;
+        }
+
+        .auto {
+            overflow: auto;
+            background-color: #e0e0ff;
+        }
+
+        .inherit-parent {
+            width: 220px;
+            height: 120px;
+            background-color: #fafafa;
+            overflow: auto;
+            border: 2px dashed #333;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .inherit-child {
+            width: 200px;
+            height: 100px;
+            background-color: #fff0c2;
+            overflow: inherit;
+            border: 1px solid #000;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>1. overflow: visible</h2>
+    <div class="example visible">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sunt est possimus pariatur
+            expedita, debitis perferendis eius quibusdam ex, porro nemo? Pariatur rem illum minus voluptatum
+            consequuntur, modi soluta at!
+        </p>
+    </div>
+
+    <h2>2. overflow: hidden</h2>
+    <div class="example hidden">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur veniam vero placeat sed inventore!
+            Illo adipisci cupiditate eius exercitationem ducimus molestias ex voluptatem nemo sunt sit, cumque
+            eligendi, quasi maxime.
+        </p>
+    </div>
+
+    <h2>3. overflow: scroll</h2>
+    <div class="example scroll">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut debitis id unde quos architecto
+            doloremque nulla officiis vero corporis ipsa reiciendis voluptates, quo adipisci dolore odit! Aut,
+            magnam dolore!
+        </p>
+    </div>
+
+    <h2>4. overflow: auto</h2>
+    <div class="example auto">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta tempora rerum accusamus commodi, ad
+            distinctio provident doloremque maxime soluta perspiciatis, suscipit, aliquam consequuntur numquam
+            deleniti nemo fuga est eveniet.
+        </p>
+    </div>
+
+    <h2>5. overflow: inherit</h2>
+    <div class="inherit-parent">
+        <p>Родительский контейнер (overflow: auto)</p>
+        <div class="inherit-child">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorem quia libero quis dicta,
+                tenetur ipsum alias ullam ipsa? Tempore cupiditate iste explicabo debitis! Voluptatum impedit
+                numquam beatae illum sequi!
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
