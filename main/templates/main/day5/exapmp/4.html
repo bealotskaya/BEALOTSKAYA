@@ -1,13 +1,17 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Пример HTML</title>
+    <link rel="stylesheet" href="../../../static/main/css/no_style.css"> 
+    
     <style>
-        .headerBlock {
+    
+    .headerBlock {
             width: 100%;
             height: 20px;
             background-color: red;
@@ -35,14 +39,98 @@
             color: black;
             clear: both;
         }
+
+        body {height: 1000px;}
+        .header {
+            text-align: center;
+            height: 50px;
+            background: #b03b3b;
+        }
+        .menu {
+            width: 200px;
+            float: left;
+            height: 500px;
+            background: #3baeb0; 
+        }
+        .menu ul {
+            margin-left: 0px;
+            color: #d6d6d6;
+            text-decoration: none;
+            text-align: left;
+            font-size: 14px ;
+        }
+        .menu a:link {
+            color: #d6d6d6; 
+            text-decoration: none;
+        }
+        .menu a:visited {
+            color: #d6d6d6; 
+            text-decoration: none;
+        }
+        .menu a:hover {
+            color: rgb(0, 0, 0); 
+            text-decoration: none;
+        }
+        .menu a:active {
+            color: rgb(0, 0, 0); 
+            text-decoration: none;
+        }
+        .content {
+        background: #663bb0;
+        margin-left: 200px;
+        margin-right: 200px;  
+        height: 500px;
+        
+    }
+    .baner {
+        width: 200px;
+        float: right;
+        height: 500px;
+        background: #a8b03b;
+    }
+    .footer {
+        height: 50px;
+        background: #3fb03b; 
+    }
+    .wrap {
+        background: #ca91a9; 
+    }
+    .clear {
+        /*height: 50px;*/
+        background: #00046f; 
+        clear: both; 
+    }
+
     </style>
 </head>
 
 <body>
-    <div class="headerBlock">Верхний блок</div>
+    <div class = "header">
+        <p><a href="../../main.html"><img src="../../../../../main/static/main/img/home.png"  height= 30px > </a> </p>
+    </div>
+    <div class = "wrap">
+    <div class = "menu">
+        <span class="logo">Вёрстка</span>
+        <h3>Моя работа:</h3>
+        <ul>
+            <li><a href="../block.html">Block</a></li><br>
+            <li><a href="1.html">1</a></li><br>
+            <li><a href="2.html">2</a></li><br>
+            <li><a href="3.html">3</a></li><br>
+            <li><a href="4.html">4</a></li><br>
+            <li><a href="5.html">5</a></li><br>
+            <li><a href="6.html">6</a></li><br>
+            <li><a href="7.html">7</a></li><br>
+            <li><a href="8.html">8</a></li><br>
+        </ul>      
+    </div>
+    <div class = "content"><body>
+        <div class="headerBlock">Верхний блок</div>
     <div class="centerBlock">Центральный блок</div>
     <div class="rightBlock">Правый блок</div>
-    <div class="footerBlock">Подвал</div>
+    <div class="footerBlock">Подвал</div></div>
+    <div class = "baner">baner</div></div>
+    <div class = "footer">footer</div>
 
 </body>
 
