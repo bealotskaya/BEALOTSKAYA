@@ -48,14 +48,21 @@
 
         body {height: 1000px;}
         .header {
+            top: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
             text-align: center;
             height: 50px;
             background: #b03b3b;
         }
         .menu {
+            left: 0;
+            top: 50px;
+            position: fixed;
             width: 200px;
             float: left;
-            height: 500px;
+            height: 550px;
             background: #3baeb0; 
         }
         .menu ul {
@@ -82,30 +89,38 @@
             text-decoration: none;
         }
         .content {
-        background: #663bb0;
-        margin-left: 200px;
-        margin-right: 200px;  
-        height: 500px;
-        
-    }
-    .baner {
-        width: 200px;
-        float: right;
-        height: 500px;
-        background: #a8b03b;
-    }
-    .footer {
-        height: 50px;
-        background: #3fb03b; 
-    }
-    .wrap {
-        background: #ca91a9; 
-    }
-    .clear {
-        /*height: 50px;*/
-        background: #00046f; 
-        clear: both; 
-    }
+            top: 50px;
+            left: 200px;
+            right: 200px;
+            position: fixed;
+            background: #cecece; 
+            height: 550px;  
+        }
+        .baner {
+            right: 0;
+            top: 50px;
+            position: fixed;
+            width: 200px;
+            float: right;
+            height: 550px;
+            background: #a8b03b;
+        }
+        .footer {
+            left: 0;
+            right: 0;
+            top: 583px;
+            position: fixed;
+            height: 50px;
+            background: #3fb03b; 
+        }
+        .wrap {
+            background: #ca91a9; 
+        }
+        .clear {
+            /*height: 50px;*/
+            background: #00046f; 
+            clear: both; 
+        }
 
     </style>
 </head>
@@ -128,6 +143,7 @@
             <li><a href="6.html">6</a></li><br>
             <li><a href="7.html">7</a></li><br>
             <li><a href="8.html">8</a></li><br>
+            <li><a href="../test.html">Test</a></li><br>
         </ul>      
     </div>
     <div class = "content"><body>

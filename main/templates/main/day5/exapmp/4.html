@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -11,7 +9,7 @@
     
     <style>
     
-    .headerBlock {
+        .headerBlock {
             width: 100%;
             height: 20px;
             background-color: red;
@@ -26,7 +24,7 @@
         }
 
         .rightBlock {
-            width: 20%;
+            width: 10%;
             height: 100px;
             background-color: blue;
             float: left;
@@ -42,14 +40,21 @@
 
         body {height: 1000px;}
         .header {
+            top: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
             text-align: center;
             height: 50px;
             background: #b03b3b;
         }
         .menu {
+            left: 0;
+            top: 50px;
+            position: fixed;
             width: 200px;
             float: left;
-            height: 500px;
+            height: 550px;
             background: #3baeb0; 
         }
         .menu ul {
@@ -76,22 +81,30 @@
             text-decoration: none;
         }
         .content {
-        background: #663bb0;
-        margin-left: 200px;
-        margin-right: 200px;  
-        height: 500px;
-        
-    }
-    .baner {
-        width: 200px;
-        float: right;
-        height: 500px;
-        background: #a8b03b;
-    }
-    .footer {
-        height: 50px;
-        background: #3fb03b; 
-    }
+            top: 50px;
+            left: 200px;
+            right: 200px;
+            position: fixed;
+            background: #cecece; 
+            height: 550px;  
+        }
+        .baner {
+            right: 0;
+            top: 50px;
+            position: fixed;
+            width: 200px;
+            float: right;
+            height: 550px;
+            background: #a8b03b;
+        }
+        .footer {
+            left: 0;
+            right: 0;
+            top: 583px;
+            position: fixed;
+            height: 50px;
+            background: #3fb03b; 
+        }
     .wrap {
         background: #ca91a9; 
     }
@@ -122,13 +135,15 @@
             <li><a href="6.html">6</a></li><br>
             <li><a href="7.html">7</a></li><br>
             <li><a href="8.html">8</a></li><br>
+            <li><a href="../test.html">Test</a></li><br>
         </ul>      
     </div>
     <div class = "content"><body>
         <div class="headerBlock">Верхний блок</div>
-    <div class="centerBlock">Центральный блок</div>
-    <div class="rightBlock">Правый блок</div>
-    <div class="footerBlock">Подвал</div></div>
+        <div class="centerBlock">Центральный блок</div>
+        <div class="rightBlock">Правый блок</div>
+        <div class="footerBlock">Подвал</div>
+    </div>
     <div class = "baner">baner</div></div>
     <div class = "footer">footer</div>
 

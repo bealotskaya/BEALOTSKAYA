@@ -8,20 +8,6 @@
     <link rel="stylesheet" href="../../../static/main/css/no_style.css"> 
     
     <style>
-    
-    .padding-box {
-            background-color: lightblue;
-            border: 2px solid darkblue;
-            padding: 20px;
-            margin: 20px;
-        }
-
-        .padding-mixed {
-            background-color: lightgreen;
-            border: 2px solid green;
-            padding: 10px 20px 30px 40px;
-            margin: 20px;
-        }
         body {height: 1000px;}
         .header {
             top: 0;
@@ -93,9 +79,52 @@
             background: #ca91a9; 
         }
         .clear {
-            /*height: 50px;*/
             background: #00046f; 
             clear: both; 
+        }
+
+        .firstBlock {
+            height: 300px;
+            width: 300px;
+            position: fixed;
+            background-color: rgb(217, 246, 255);
+            float: center;
+        }
+
+        .secondBlock {
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            top: 70px;
+            left: 230px;
+            position: fixed;
+        }
+
+        .thirdBlock {
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            top: 70px;
+            left: 360px;
+            position: fixed;
+        }
+
+        .fourthBlock {
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            top: 200px;
+            left: 300px;
+            position: fixed;
+        }
+        .fifthBlock {
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            top: 110px;
+            left: 270px;
+            float: center;
+            position: fixed;
         }
 
     </style>
@@ -103,32 +132,35 @@
 
 <body>
     <div class = "header">
-        <p><a href="../../main.html"><img src="../../../../../main/static/main/img/home.png"  height= 30px > </a> </p>
+        <p><a href="../main.html"><img src="../../../../main/static/main/img/home.png"  height= 30px > </a> </p>
     </div>
     <div class = "wrap">
     <div class = "menu">
         <span class="logo">Вёрстка</span>
         <h3>Моя работа:</h3>
         <ul>
-            <li><a href="../block.html">Block</a></li><br>
-            <li><a href="1.html">1</a></li><br>
-            <li><a href="2.html">2</a></li><br>
-            <li><a href="3.html">3</a></li><br>
-            <li><a href="4.html">4</a></li><br>
-            <li><a href="5.html">5</a></li><br>
-            <li><a href="6.html">6</a></li><br>
-            <li><a href="7.html">7</a></li><br>
-            <li><a href="8.html">8</a></li><br>
-            <li><a href="../test.html">Test</a></li><br>
+            <li><a href="block.html">Block</a></li><br>
+            <li><a href="exapmp/1.html">1</a></li><br>
+            <li><a href="exapmp/2.html">2</a></li><br>
+            <li><a href="exapmp/3.html">3</a></li><br>
+            <li><a href="exapmp/4.html">4</a></li><br>
+            <li><a href="exapmp/5.html">5</a></li><br>
+            <li><a href="exapmp/6.html">6</a></li><br>
+            <li><a href="exapmp/7.html">7</a></li><br>
+            <li><a href="exapmp/8.html">8</a></li><br>
+            <li><a href="test.html">Test</a></li><br>
         </ul>      
     </div>
-    <div class = "content"><body>
-        <h2>Демонстрация padding</h2>
-        <div class="padding-box">Внутренний отступ 20px</div>
-        <div class="padding-mixed">Разные внутренние отступы</div></div>
+    <div class = "content">
+        <div class="firstBlock"></div>
+        <div class="secondBlock"></div>
+        <div class="thirdBlock"></div>
+        <div class="fourthBlock"></div>
+        <div class="fifthBlock"></div>
+    </div>
     <div class = "baner">baner</div></div>
     <div class = "footer">footer</div>
 
-</body>
 
+</body>
 </html>
