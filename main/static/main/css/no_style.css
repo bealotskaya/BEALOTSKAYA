@@ -1,5 +1,7 @@
-
-h1 {
+body {
+    margin-left: 235px;
+}
+aside h1 {
     text-align: center;
     color: #38429b;
     text-shadow: 
@@ -11,19 +13,29 @@ h1 {
     padding: 2.5%;
 }
 
-h2, h3 {
+aside h2, aside h3 {
     text-align: center;
     font-family: "PIXY";
 }
 
-p, ul, address, h4, h5, h6, samp {
+aside p, ul, address, h4, h5, h6, samp {
     text-align: left;
     margin-top: 20px;
     margin-left: 20px;
     width: 85%;
 }
 
-
+.header {
+    height: 30px;
+    right: 0; 
+    background-color: #38429b; 
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 10px;
+    font-size: 16px; 
+    position: fixed;
+}
 
 aside {
     position: fixed;
@@ -79,80 +91,6 @@ aside a:active {
 
 
 
-body {height: 1000px;}
-header {
-            top: 0;
-            left: 0;
-            right: 0;
-            position: fixed;
-            text-align: center;
-            height: 50px;
-            background: #b03b3b;
-        }
-        .menu {
-            left: 0;
-            top: 50px;
-            position: fixed;
-            width: 200px;
-            float: left;
-            height: 500px;
-            background: #3baeb0; 
-        }
-        .menu ul {
-            margin-left: 0px;
-            color: #d6d6d6;
-            text-decoration: none;
-            text-align: left;
-            font-size: 14px ;
-        }
-        .menu a:link {
-            color: #d6d6d6; 
-            text-decoration: none;
-        }
-        .menu a:visited {
-            color: #d6d6d6; 
-            text-decoration: none;
-        }
-        .menu a:hover {
-            color: rgb(0, 0, 0); 
-            text-decoration: none;
-        }
-        .menu a:active {
-            color: rgb(0, 0, 0); 
-            text-decoration: none;
-        }
-        .content {
-            top: 50px;
-            left: 200px;
-            right: 200px;
-            position: fixed;
-            background: #663bb0; 
-            height: 500px;  
-        }
-        .baner {
-            right: 0;
-            top: 50px;
-            position: fixed;
-            width: 200px;
-            float: right;
-            height: 500px;
-            background: #a8b03b;
-        }
-        .footer {
-            left: 0;
-            right: 0;
-            top: 500px;
-            position: fixed;
-            height: 50px;
-            background: #3fb03b; 
-        }
-        .wrap {
-            background: #ca91a9; 
-        }
-        .clear {
-            background: #00046f; 
-            clear: both; 
-        }
 
 @font-face {
     font-family: "PIXY"; 
