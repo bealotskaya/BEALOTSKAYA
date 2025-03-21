@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индивидуальное задание, Часть 2</title>
+    <link rel="stylesheet" href="../../../static/main/css/no_style.css"> 
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          text-align: center;
+          padding: 5px;
+        }
+        
+        button {
+            margin-top: 5px;
+        }
+      </style>
+</head>
+
+
+<body>
+    <aside>
+            
+            <h3>Мои задания:</h3>
+            <ul>
+                <li><a href="1.html">Часть 1</a></li><br>
+                <li><a href="2.html">Часть 2</a></li><br>
+            </ul>    
+            
+    </aside>
+
+    <div class = "header">
+        <p><a href="../main.html"><img src="../../../../main/static/main/img/home.png"  height= 30px > </a> </p>
+    </div>  
+        <h3>Заголовок таблицы</h3>
+
+        <table>
+        <tr>
+            <th colspan="3">Заголовок 1</th>
+            <th>Заголовок 2</th>
+        </tr>
+        <tr>
+            <th>Ячейка 1</th>
+            <td colspan="2" rowspan="2">Ячейка 2</td>
+            <td >Ячейка 3</td>
+        </tr>
+        <tr>
+            <th>Ячейка 4</th>
+            <td >Ячейка 6</td>
+        </tr>
+        <tr>
+
+            <th rowspan="2">Ячейка 5</th>
+            <td colspan="2" rowspan="2">
+            <table class="inner-table">
+                <tr>
+                    <th colspan="2"></th>
+                    <th>Заголовок 1 Таблицы 2</th>
+                </tr>
+                <tr>
+                    <td>Заголовок 2 Таблицы 2</td>
+                    <td colspan="2">Ячейка 1 Таблицы 2</td>
+                </tr>
+                <tr>
+                    <td>Заголовок 3 Таблицы 2</td>
+                    <td colspan="2">Ячейка 2 Таблицы 2</td>
+                </tr>
+            </table>
+            </td>
+
+            <td>Ячейка 7</td>
+        </tr>
+        </table>
+
+    <br>
+    <hr>
+    <br>
+    
+
+    <table>
+        <tr>
+            <td>Вопрос 1</td>
+            <td><input type="text" placeholder="Введите ответ"></td>
+            <td><input type="text" placeholder="Введите ответ"></td>
+            <td><input type="text" placeholder="Введите ответ"></td>
+        </tr>
+        <tr>
+            <td>Вопрос 2</td>
+            <td colspan="3"><select>
+                <option>Ответ 2.1</option>
+                <option>Ответ 2.2</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Вопрос 3</td>
+            <td><input type="checkbox"> Ответ 3.1</td>
+            <td><input type="checkbox"> Ответ 3.2</td>
+            <td><input type="checkbox"> Ответ 3.2</td>
+        </tr>
+        <tr>
+            <td>Вопрос 4</td>
+            <td colspan="3"><input type="text" placeholder="Введите ответ"></td>
+        </tr>
+        <tr>
+            <td>Вопрос 5</td>
+            <td><input type="checkbox"> Ответ 5.1</td>
+            <td><input type="checkbox"> Ответ 5.2</td>
+            <td><input type="checkbox"> Ответ 5.2</td>
+        </tr>
+        <tr>
+            <td>Вопрос 6</td>
+            <td colspan="3"><input type="text" placeholder="Введите ответ"> <button type="submit">Обзор</button></td>
+        </tr>
+        <tr>
+            <td>Вопрос 7</td>
+            <td colspan="3"><select>
+                <option>Ответ 7.1</option>
+                <option>Ответ 7.2</option>
+                <option>Ответ 7.3</option>
+                <option>Ответ 7.4</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Дополнительная информация</td>
+            <td colspan="3"><textarea class="full-width" placeholder="Введите информацию"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+                <input type="image" src="../../../../main/static/main/img/send.png" height= 30px>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

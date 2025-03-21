@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../../static/main/css/frames.css"> 
 </head>
 
-<body>
+<body class="light-theme">
     <aside>
         <span class="logo">Day 3</span>
         <h3>Мои работы:</h3>
@@ -20,13 +20,14 @@
 
     <div class = "header">
         <p><a href="../main.html"><img src="../../../../main/static/main/img/home.png"  height= 30px > </a> </p>
+        <button class="theme" id="theme"><img src="../../../../main/static/main/img/sun.png" height= 30px id="theme-icon"></button>
     </div>
     
     <table style="width: 700px;">
         <tr>
             <td>
                 <h3>Простая форма поиска с вариантами:</h3>
-                <form name="search_form1" method="get" action="http://sc.it-academy.by/fe/form.php">
+                <form name="search_form1" method="get" action="http://127.0.0.1:5500/main/templates/main/main.html">  <!--http://sc.it-academy.by/fe/form.php-->
                     <fieldset>
                         <legend>Строка поиска</legend>
                         <input type="text" name="query" maxlength="10">
@@ -157,6 +158,7 @@
             </td>
         </tr>
     </table>
+    <script src="../../script.js"></script>
 </body>
 
 </html>

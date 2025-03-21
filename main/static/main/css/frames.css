@@ -1,4 +1,11 @@
-body {
+body.light-theme {
+    background-color: white;
+    color: black;
+    font-family: "Podkova";
+    margin-left: 235px;
+}
+
+body.dark-theme {
     background: #363636;
     color: #ffffff;
     font-family: "Podkova";
@@ -28,8 +35,6 @@ p, ul {
     
     width: 85%;
 }
-
-
 
 aside {
     position: fixed;
@@ -76,7 +81,6 @@ aside a:hover {
     color: rgb(117, 117, 117); 
     text-decoration: none;
 }
-
 
 aside a:active {
     color: rgb(0, 0, 0); 
@@ -132,43 +136,33 @@ code {
 
 
 fieldset {
+    background-color: var(--fieldset-background);
     border: 2px solid #38429b; 
     border-radius: 5px; 
     padding: 15px; 
-    background-color:#363636;
 }
-
-
-legend {
-    color: #ffffff;
-    padding: 0 10px;
-}
-
 
 input[type="text"],
 input[type="email"],
+
 textarea {
     width: 100%;
     padding: 10px; 
     margin: 10px 0; 
     border: 1px solid #454545; 
     border-radius: 4px; 
-    background-color:#363636;
+    background-color: var(--fieldset-background);
 }
 
 
-button {
-    background-color: #38429b; 
-    color: white; 
+
+button.theme {
+    background-color: transparent;
     border: none; 
-    padding: 10px 15px;
-    border-radius: 4px; 
-    cursor: pointer; 
+
 }
 
-button:hover {
-    background-color: #2c347f; 
-}
+
 table {
     width: 50%; 
     margin: 0 auto; 

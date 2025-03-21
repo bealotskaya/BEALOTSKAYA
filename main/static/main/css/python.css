@@ -1,4 +1,12 @@
-body {
+
+body.light-theme {
+    background-color: white;
+    color: black;
+    font-family: "Podkova";
+    margin-left: 235px;
+}
+
+body.dark-theme {
     background: #363636;
     color: #ffffff;
     font-family: "Podkova";
@@ -30,17 +38,13 @@ p, ul, address, h4, h5, h6, samp {
 }
 
 fieldset {
+    background-color: var(--fieldset-background);
     border: 2px solid #38429b; 
     border-radius: 5px; 
     padding: 15px; 
-    background-color:#363636;
 }
 
 
-legend {
-    color: #ffffff;
-    padding: 0 10px;
-}
 
 aside {
     position: fixed;
@@ -93,8 +97,6 @@ aside a:active {
     color: rgb(0, 0, 0); 
     text-decoration: none;
 }
-
-
 
 a:link {
     color: #d6d6d6; 
@@ -165,6 +167,10 @@ th, td {
     padding: 0 10px;
     font-size: 16px; 
     position: fixed;
+}
+button.theme {
+    background-color: transparent;
+    border: none; 
 }
 
 @font-face {
