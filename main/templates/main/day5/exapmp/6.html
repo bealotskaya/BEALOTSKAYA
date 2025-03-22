@@ -4,23 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пример 6</title>
+    <title>Пример 8</title>
     <link rel="stylesheet" href="../../../static/main/css/no_style.css"> 
     
     <style>
     
-    .padding-box {
+        .content #div_three {
+            width: 400px;
+            height: 300px;
             background-color: lightblue;
-            border: 2px solid darkblue;
-            padding: 20px;
-            margin: 20px;
+            position: relative;
         }
 
-        .padding-mixed {
+        .content #search {
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            width: 200px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+
+        .content #search_zindex {
+            position: absolute;
+            left: 350px;
+            top: 100px;
+            width: 200px;
+            height: 100px;
             background-color: lightgreen;
-            border: 2px solid green;
-            padding: 10px 20px 30px 40px;
-            margin: 20px;
+            z-index: -1;
         }
         body {height: 1000px;}
         .header {
@@ -73,22 +85,22 @@
             height: 550px;  
         }
         .baner {
-            right: 0;
-            top: 50px;
-            position: fixed;
-            width: 200px;
-            float: right;
-            height: 550px;
-            background: #a8b03b;
-        }
-        .footer {
-            left: 0;
-            right: 0;
-            top: 583px;
-            position: fixed;
-            height: 50px;
-            background: #3fb03b; 
-        }
+                right: 0;
+                top: 50px;
+                position: fixed;
+                width: 200px;
+                float: right;
+                height: 550px;
+                background: #a8b03b;
+            }
+            .footer {
+                left: 0;
+                right: 0;
+                top: 583px;
+                position: fixed;
+                height: 50px;
+                background: #3fb03b; 
+            }
         .wrap {
             background: #ca91a9; 
         }
@@ -117,18 +129,16 @@
             <li><a href="4.html">4</a></li><br>
             <li><a href="5.html">5</a></li><br>
             <li><a href="6.html">6</a></li><br>
-            <li><a href="7.html">7</a></li><br>
-            <li><a href="8.html">8</a></li><br>
             <li><a href="../test.html">Test</a></li><br>
         </ul>      
     </div>
     <div class = "content"><body>
-        <h2>Демонстрация padding</h2>
-        <div class="padding-box">Внутренний отступ 20px</div>
-        <div class="padding-mixed">Разные внутренние отступы</div></div>
+        <div id="div_three">
+            <div id="search">Абсолютное позиционирование</div>
+            <div id="search_zindex">Элемент с z-index: -1</div>
+        </div></div>
     <div class = "baner">baner</div></div>
     <div class = "footer">footer</div>
 
 </body>
-
 </html>
